@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Face Blur</title>
+  </head>
+  <body>
+    <h1>Upload Images</h1>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_files') }}">
+      <input type="file" name="files[]" multiple>
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>
